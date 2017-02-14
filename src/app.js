@@ -1,1 +1,3 @@
-document.write('hi there');
+var write = require('./js/write.js');
+
+write('Bowen Zhong');
