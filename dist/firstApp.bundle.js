@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -97,9 +97,8 @@ if(false) {
 /***/ (function(module, exports) {
 
 module.exports = function(text) {
-	document.write(text);
+	document.write('It is ', text);
 };
-
 
 /***/ }),
 /* 2 */
@@ -424,14 +423,26 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 5 */
+/* 5 */,
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = function(text) {
+	document.write(text);
+};
+
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var write = __webpack_require__(1);
+var write = __webpack_require__(6);
+var shareTitle = __webpack_require__(1);
 __webpack_require__(0);
 // var style = require('style-loader!css-loader!./css/style.css');
 
-write('Bowen Zhong');
+shareTitle('Bowen Zhong');
+write('It is the first app');
 
 
 

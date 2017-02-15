@@ -1,3 +1,3 @@
 module.exports = function(text) {
-	document.write(text);
+	window.alert(text);
 };
