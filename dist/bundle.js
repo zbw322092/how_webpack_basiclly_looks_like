@@ -427,7 +427,8 @@ function updateLink(linkElement, obj) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var write = __webpack_require__(1);
-var style = __webpack_require__(0);
+__webpack_require__(0);
+// var style = require('style-loader!css-loader!./css/style.css');
 
 write('Bowen Zhong');
 
