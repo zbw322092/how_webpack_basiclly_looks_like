@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
 	entry: {
 		firstApp: './src/app.js',
@@ -12,6 +14,9 @@ module.exports = {
 		loaders: [
 			{ test: /\.css$/, loader: 'style-loader!css-loader' }
 		]
-	}
+	},
+	plugins: [
+		new webpack.optimize.CommonsChunkPlugin({name: 'common', filename: '[name].bundle.js'})
+	]
 };
 
